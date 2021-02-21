@@ -20,9 +20,6 @@ node = node.Node()
 
 node.load_from_file(args.file)
 
-# with open(args.file, 'rb') as f:
-    # node = pickle.load(f)
-
 print(f'OD File for {node.Name}')
 print(f'  Type:          {node.Type}')
 print(f'  ID:            {node.ID}')

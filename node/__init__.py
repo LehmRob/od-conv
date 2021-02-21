@@ -17,10 +17,7 @@ class Node:
         self.UserMapping = user_mappings
 
     def load_from_file(self, filename):
-        with open(filename, 'rb') as f:
-            data = pickle.load(f)
-
-        self.Name = data.Name
+        data.Name
         self.Type = data.Type
         self.Type = data.Type
         self.ID = data.ID
@@ -39,3 +36,11 @@ class ObjectEntry:
         self.name = name
         self.od_type = od_type,
         self.access = access
+
+
+def node_to_object_dict(node:Node):
+    dictionary = {}
+    for index, value in node.Dictionary.items():
+        
+
+    return dictionary
