@@ -17,7 +17,7 @@ class Node:
         self.UserMapping = user_mappings
 
     def load_from_file(self, filename):
-        with open(filename) as f:
+        with open(filename, 'rb') as f:
             data = pickle.load(f)
 
         self.Name = data.Name
